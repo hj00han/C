@@ -1,0 +1,26 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Hyunjoo Han
+Student ID#: 132749227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.Several helper functions were designed to return values in two different ways (via an argument and/or by return). Explain at least one benefit of this “feature” and how it increases usability/flexibility and at least one negative reason why having functions designed to work in this way may not be desirable.
+
+->If a functions is designed to return values in two ways, it can offer us the option to choose the values depending on the situation which means we have the flexibility to choose the best option based on their use. For example, in our workshop, the function 'calculateCostPerServing' returns the calculated cost value for a product using parameters. In this case, if we want to use this function multiple times(to calculate the cost per serving for more than one product), we will end up with only the result from the last time we call the function. However, since we made this function return the value via an argument as well, we can bring it even after we have lost the actual value it returned. This means we are able to reuse the value.
+On the other hand, using two different ways to return values in a function can make the code less readable, especially for people who are not familiar with this approach. It may not be the easiest and clearest thing to understand. However, we can always add comments to explain how it is intended to work, which should make it fine for others to understand the purpose.
+
+2.According to the design principles for structured design, functions should be highly cohesive and have low coupling. Identify one function in the workshop that demonstrates less than perfect cohesion, and one function that demonstrates coupling that could be improved. For each identified function, briefly explain what you would do to improve them.
+
+-> I would choose the function 'convertLbs' as an example that demonstrates less than perfect cohesion because it handles two operations: one for the pound-kg conversion and another for the pound-g conversion. A highly cohesive module performs a single task. Additionally, since we already have 'convertLbsKg' and 'convertLbsG' functions, there is no need to create another function solely to operate these two existing functions together. We can call these separate functions for conversions depends on our needs.
+I would choose 'convertLbsG' as an example that demonstrates coupling. It has another function 'convertLbsKg' inside. To make it have low coupling, I use calulation separately.
+
+3.What advantages are there in passing structures to functions? Based on your readings this week (for next week’s topics) what could be done in the passing of this data to functions to make it more efficient? Explain how the “displayCatfoodData” function could be improved.
+
+-> Passing structures to functions makes it efficient. We can compact related data together, which means we can avoid duplicating the same set of arguments for multiple function calls.
+In the function 'displayCatFoodData', we use multiple parameters. However, this could be avoided by passing the structure 'catFoodInfo'.

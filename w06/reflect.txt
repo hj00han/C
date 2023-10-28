@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Hyunjoo Han
+Student ID#: 132749227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Why are there three types of iteration constructs if we can make any one of them behave the same way? Refer to your code in this workshop to help backup your answer (do NOT include the code in your answer). Typically, when working with arrays, there is one iteration construct we favor – what is it and explain why it is more preferred over the other options.
+
+The three types of iteration constructs are 'while', 'do while', 'for'. We can surely make them work in very similar way but each one has its own characteristics. 
+
+'for' loop is more efficient than 'while' or 'do while' loop when we work with arrays since we normally know the size of the array, the termination conditions of the loop can be evaluated efficiently. At the same time, 'while' and 'do while' loop are more flexible and suitable when we don't know how many iterations have to be happened or termination condition is based on other factors. By this, we can have better control over when the loop has to be terminated.
+
+In my code, the for loop is used when iterating the wish list items. Because I knew how many iterations have to be executed and it's determined by the wishItems variable. The loop iterates from i = 0 to i < wishItems, allowing access to each item in the arrays cost, importance, and finance.
+
+The 'for' loop is preferred in this case because it provides clear way to iterate over an array using an index. It makes sure that the loop variable (i) is initialized correctly, updated, and terminated based on the condition that I designed. Furthermore, using a for loop allows for easy tracking and indexing of the array elements, which is important when dealing with multiple arrays that are related to each other.
+
+Compared to the 'while' and 'do while' loops, 'for' loop offers better readability and maintainability when working with arrays, as it clearly communicates the intent of iterating over a specific range. The initialization, condition, and update expressions are all contained within the loop statement, making it easier to understand the flow of the loop at a glance. 
+
+For these reasons, 'for' loop is the preferred iteration construct when working with arrays in this code because it provides clear method to iterate over the wish list items, utilizing the known number of iterations determined by the wishItems variable.
+
+
+2. Describe what you did to both test and debug your program. How did you go about finding where the problems were located (explain how you did this for both syntactic and semantic problems)?
+
+When I was coding for Part 1, one of the while loops was not working properly. It would not iterate the way it was supposed to. The logic I used was not wrong, so I thought it might be a syntactic error. Assuming it was a syntactic error, I walked through my code and tried to understand the error message printed by the compiler. Upon inspection, I realized that I had mistakenly used '\n' in the 'scanf' statement, which was incorrect. I removed the '\n' and the loop started functioning correctly.
+
+Regarding the semantic error, it occurred in the 'for' loop. The loop was not iterating as expected. To investigate, I wanted to ensure that the variable 'i' was being incremented correctly. So, I inserted a 'printf' statement to print the value of 'i' during each iteration. However, the output consistently showed '3' from the previous loop. I even attempted to initialize 'i' just before the 'for' loop, but the issue persisted. By carefully examining the error message provided by the compiler and thoroughly reviewing my code, I realized that I had mistakenly added a semicolon after the 'for' loop, which was unnecessary. After removing this semicolon, the 'for' loop functioned properly.
+
+3. When attempting to submit your work, you receive the following error feedback from the submitter:
+Using the above explicit information, explain each step you must take to successfully identify and fix your error
+
+-Execute the code in the compiler and obtain the result
+-Check the outcome on line 6
+-Define the difference
+-Go back to the code
+-Verify the section of the code related to 'income'
+-Check if there is error of logic
+-Check if it has correct value
+ ->Correct it if there is error
+-Compile and run it
+-Compare the outcome to see if it matches now
+-If it doesn't match, double check for Syntactic & Semantic error

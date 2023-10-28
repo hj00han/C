@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Hyunjoo Han
+Student ID#: 132749227
+Email      : hhan39@myseneca.ca
+Section    : NEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. Determining the customer preference based on the number of servings to the available coffee bag weights 
+required a more complex logical expression. Copy your submitted code for only this part of the logic, and 
+explain the following:
+
+(typicalServingPD < 5 && bagWeight1 == 250) || (((4 < typicalServingPD) && (typicalServingPD < 10) && bagWeight1 == 500)) || (typicalServingPD >= 10 && bagWeight1 == 1000)
+
+ A) How many relational expressions did you use and identify each of them.
+    - I used 4 (<, ==, >=)
+
+ B) How many logical expressions did you use and identify each of them.
+    - I used 2 (&&, ||) 
+
+2. Referring to Part-1 output #9, show how that logic can be coded in TWO correct ways, one applying 
+DeMorgan’s Law and the other way not using DeMorgan’s Law. Also, identify what method you used in your 
+submitted answer for Part-1.
+
+ Applying DeMorgan's Law : prdt3ID != (prdt1ID || prdt2ID)
+ Not using DeMorgan's Law : prdt3ID != prdt1ID && prdt3ID != prdt2ID
+
+ I used \\ prdt3ID != prdt1ID && prdt3ID != prdt2ID 
+
+
+3. Using the variables you used in Part-2, demonstrate two ways you can organize them, so it is optimized for easy 
+to maintain code and contributes towards clarity in how data is stored in the program
+
+const double GRAM_IN_LBS = 453.5924
+  => I would place this on top or on the bottom because this is only one that has constant value and it is only double type value as well.
+
+char coffee1Type, coffee2Type, coffee3Type, bestWcream1, bestWcream2, bestWcream3;
+int bagWeight1, bagWeight2, bagWeight3;
+char preferCoffee_strength, preferCoffee_cream; 
+int typicalServingPD;
+  => I organized this way in the workshop because I wanted to list the variables that I used for first chart together and others that I used for costomer preference. I seperated depends on variable type as well.
+
+char coffee1Type, coffee2Type, coffee3Type, bestWcream1, bestWcream2, bestWcream3, preferCoffee_strength, preferCoffee_cream;
+int bagWeight1, bagWeight2, bagWeight3, typicalServingPD;
+
+  => This way would be efficiant as well because I still list the variables for the first chart together and others for costomer preference together. But this time, I seperate depending on vaiable type so that when you are looking for specific variable, first you can go to the type and find the one you are looking for in there.
