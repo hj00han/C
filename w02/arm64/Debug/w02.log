@@ -1,0 +1,14 @@
+﻿  w2p2.c
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(86,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(88,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(90,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(92,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(94,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(96,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(116,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(118,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(120,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(126,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(128,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+\\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\w2p2.c(130,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  w02.vcxproj -> \\Mac\Home\Desktop\IPC144WedFri\Workshop2\w02\arm64\Debug\w02.exe
